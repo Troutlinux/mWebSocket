@@ -3,7 +3,7 @@ alias -l _WebSocket.Debug
 
 ;; menu for the debug window
 menu @WebSocketDebug {
-  $iif($WebSockDebug, Disable, Enable): WebSocketDebug
+  $iif($WebSockDebug, Disable, Enable): WebSockDebug
   -
   Clear:clear @WebSocketDebug
   -
