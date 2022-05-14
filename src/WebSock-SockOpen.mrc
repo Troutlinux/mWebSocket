@@ -6,7 +6,7 @@ on $*:SOCKOPEN:/^_WebSocket_(?!\d+$)[^-?*][^?*]*$/:{
 
   ;; Initial error checking
   if ($sockerr) {
-    %Error = SOCKOPEN_ERROR $sock($socknamw).wsmsg
+    %Error = SOCKOPEN_ERROR $sock($sockname).wsmsg
   }
   elseif (!$hget($sockname)) {
     %Error = INTERNAL_ERROR socket-state hashtable doesn't exist
